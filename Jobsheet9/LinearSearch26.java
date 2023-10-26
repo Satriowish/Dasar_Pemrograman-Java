@@ -19,8 +19,15 @@ public class LinearSearch26 {
                 System.out.println("Masukkan key yang ingin dicari : 0");
                 status = -1;
                 System.exit(status);
+            } else if (arrayInt[i] == key && key != 0) {
+                hasil += i;
+                break;
             }
-            break;
+        }
+        if (hasil == 0) {
+            System.out.println("Key tidak ditemukan");
+        } else if (hasil != 0) {
+            System.out.println("Key ada di posisi indeks ke- " + hasil);
         }
 
     }
