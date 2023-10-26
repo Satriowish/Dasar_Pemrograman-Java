@@ -5,7 +5,8 @@ public class BubbleSortExample26 {
 
         for (int i = 0; i < intData.length; i++) {
             for (int j = 1; j < intData.length; j++) {
-                if (intData[j - 1] > intData[j]) {
+                // Mengubah tanda '>' menjadi '<' Untuk Pengurutan mengecil (descending)
+                if (intData[j - 1] < intData[j]) {
 
                     temp = intData[j];
                     intData[j] = intData[j - 1];
@@ -13,7 +14,7 @@ public class BubbleSortExample26 {
                 }
             }
         }
-        System.out.println("Hasil Pengurutan : ");
+        System.out.println("Hasil Pengurutan (Descending): ");
         for (int i = 0; i < intData.length; i++) {
             System.out.println(intData[i]);
         }
