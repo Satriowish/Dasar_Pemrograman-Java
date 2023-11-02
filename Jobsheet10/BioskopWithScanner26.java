@@ -30,10 +30,15 @@ public class BioskopWithScanner26 {
                     penonton[baris - 1][kolom - 1] = nama;
 
                     if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
-                        penonton[baris - 1][kolom - 1] = nama;
-                        System.out.println("Data penonton berhasil dimasukkan ");
+                        if (penonton[baris - 1][kolom - 1] == null) {
+                            penonton[baris - 1][kolom - 1] = nama;
+                            System.out.println("Data penonton berhasil dimasukkan.");
+                        } else {
+                            System.out.println("Maaf, kursi sudah terisi oleh penonton lain.");
+                            System.out.print("Silakan masukkan baris dan kolom kembali. ");
+                        }
                     } else {
-                        System.out.println("Nomor baris atau kolom kursi tidak tersedia!");
+                        System.out.println("Nomor baris atau kolom kursi tidak valid. Silakan coba lagi.");
                     }
                     break;
                 case 2:
