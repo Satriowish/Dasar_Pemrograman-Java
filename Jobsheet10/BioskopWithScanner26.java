@@ -34,7 +34,6 @@ public class BioskopWithScanner26 {
                             penonton[baris - 1][kolom - 1] = nama;
                             System.out.println("Data penonton berhasil dimasukkan.");
                         } else {
-                            System.out.println("Maaf, kursi sudah terisi oleh penonton lain.");
                             System.out.print("Silakan masukkan baris dan kolom kembali. ");
                         }
                     } else {
@@ -47,6 +46,8 @@ public class BioskopWithScanner26 {
                         for (int j = 0; j < 2; j++) {
                             if (penonton[i][j] != null) {
                                 System.out.println("Baris " + (i + 1) + ", Kolom " + (j + 1) + ": " + penonton[i][j]);
+                            } else {
+                                System.out.println("Baris " + (i + 1) + ", Kolom " + (j + 1) + ": ***");
                             }
                         }
                     }
