@@ -17,9 +17,9 @@ public class Bioskop26 {
         for (String[] barispenonton : penonton) {
             System.out.println("Panjang baris : " + barispenonton.length);
         }
-        System.out.println("Penonton Baris Ke-3 : ");
-        for (String i : penonton[2]) {
-            System.out.println(i);
+        System.out.println("Semua Penonton pada setiap Baris");
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Penonton pada baris ke-" + (i + 1) + ":" + String.join(",", penonton[i]));
         }
 
     }
