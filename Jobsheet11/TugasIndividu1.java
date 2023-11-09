@@ -11,7 +11,12 @@ public class TugasIndividu1 {
             System.out.println("Nilai N harus minimal 3.");
         } else {
             for (int i = 1; i <= N; i++) {
-                for (int j = 1; j <= i; j++) {
+                // Menambahkan spasi untuk pembentukan pola
+                for (int k = 1; k <= N - i; k++) {
+                    System.out.print(" ");
+                }
+
+                for (int j = i; j >= 1; j--) {
                     System.out.print(j);
                 }
                 System.out.println();
